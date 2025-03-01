@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Simple Gallery</h1>
+        <div class="upload-section">
+            <input type="file" id="uploadInput" accept="image/*" multiple>
+            <button onclick="uploadImage()">Upload Image</button>
+        </div>
+        <div class="gallery" id="gallery"></div>
+        <div class="slider-container" id="sliderContainer">
+            <span class="close" onclick="closeSlider()">&times;</span>
+            <img id="sliderImage" src="" alt="Slider Image">
+            <a id="downloadLink" download><button>Download</button></a>
+        </div>
+    </div>
+
+    <Script src="script.js"></Script>
+</body>
+</html>
